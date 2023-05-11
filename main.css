@@ -1,14 +1,158 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 img { pointer-events: none; }
-html {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.85),rgba(0, 0, 0, 0.85)), url(images/back.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+@media screen and (min-width: 1200px) {
+    html {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url(images/back.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+  .btnda {
+    top: 780px;
+  }
+  .ava {
+    top: 10%;
+  }
+  .text {
+    top: 16%;
+  }
+  .text2 {
+    top: 195px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  body {
+    background-color: rgb(44, 44, 44);
+}
+  .btnda {
+      top: 775px
+  }
+  .ava {
+    top: 10%;
+  }
+  .text {
+    top: 16%;
+  }
+  .text2 {
+    top: 195px;
+  }
+}
+@media screen and (min-width: 420px) {
+  .ava {
+    top: 10%;
+  }
+  .text {
+    top: 16%;
+  }
+  .text2 {
+    top: 195px;
+  }
+  .btnyt {
+    top: 34%;
+    font-size: 16px;
+    padding: 20px 80px;
+  }
+  .btnvk {
+    top: 44%;
+    font-size: 16px;
+    padding: 20px 105px;
+  }
+  .btntg {
+    top: 54%;
+    font-size: 16px;
+    padding: 20px 40px;
+  }
+  .btnsc {
+    top: 64%;
+    font-size: 16px;
+    padding: 20px 65px;
+  }
+  .btnstm {
+    top: 74%;
+    font-size: 16px;
+    padding: 20px 90px;
+  }
+  .btnda {
+    font-size: 16px;
+    padding: 20px 85px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .btnyt {
+    top: 34%;
+    font-size: 14px;
+    padding: 20px 70px;
+  }
+  .btnvk {
+    top: 44%;
+    font-size: 14px;
+    padding: 20px 92px;
+  }
+  .btntg {
+    top: 54%;
+    font-size: 14px;
+    padding: 20px 36px;
+  }
+  .btnsc {
+    top: 64%;
+    font-size: 14px;
+    padding: 20px 60px;
+  }
+  .btnstm {
+    top: 74%;
+    font-size: 14px;
+    padding: 20px 80px;
+  }
+  .btnda {
+    font-size: 14px;
+    padding: 20px 75px;
+  }
+}
+@media screen and (max-height:680px) and (max-width: 420px) {
+  .ava {
+    top: 140px;
+  }
+  .text {
+    top: 192px;
+  }
+  .text2 {
+    top: 225px;
+  }
+  .btnyt {
+    top: 34%;
+    font-size: 14px;
+    padding: 20px 65px;
+  }
+  .btnvk {
+    top: 44%;
+    font-size: 14px;
+    padding: 20px 87px;
+  }
+  .btntg {
+    top: 54%;
+    font-size: 14px;
+    padding: 20px 31px;
+  }
+  .btnsc {
+    top: 64%;
+    font-size: 14px;
+    padding: 20px 55px;
+  }
+  .btnstm {
+    top: 74%;
+    font-size: 14px;
+    padding: 20px 75px;
+  }
+  .btnda {
+    top: 712px;    
+    font-size: 13px;
+    padding: 20px 65px;
+  }
 }
 .square {
   width: 650px;
@@ -23,17 +167,18 @@ html {
 }
 .ava {
   position: absolute;
-  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .text {
   font-family: "Poppins", sans-serif;
   color: white;
   position: absolute;
-  top: 16%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -43,7 +188,6 @@ html {
   font-family: "Poppins", sans-serif;
   color: rgb(114, 114, 114);
   position: absolute;
-  top: 195px;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -51,15 +195,12 @@ html {
 }
 .btnyt {
   position: absolute;
-  top: 34%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 16px;
   font-family: "Poppins", sans-serif;
   color: white;
   background: linear-gradient(to left, #e52d27,#b31217,#e52d27);
   text-decoration: none;
-  padding: 20px 80px;
   border-radius: 10px;
   background-size: 200%;
   transition: .5s;
@@ -69,15 +210,12 @@ html {
 }
 .btnvk {
   position: absolute;
-  top: 44%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 16px;
   font-family: "Poppins", sans-serif;
   color: white;
   background: linear-gradient(to left, #4B79A1,#283E51,#4B79A1);
   text-decoration: none;
-  padding: 20px 105px;
   border-radius: 10px;
   background-size: 200%;
   transition: .5s;
@@ -87,15 +225,12 @@ html {
 }
 .btntg {
   position: absolute;
-  top: 54%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 16px;
   font-family: "Poppins", sans-serif;
   color: white;
   background: linear-gradient(to left, #2980b9,#2c3e50,#2980b9);
   text-decoration: none;
-  padding: 20px 40px;
   border-radius: 10px;
   background-size: 200%;
   transition: .5s;
@@ -105,15 +240,12 @@ html {
 }
 .btnsc {
   position: absolute;
-  top: 64%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 16px;
   font-family: "Poppins", sans-serif;
   color: white;
   background: linear-gradient(to left, #fe8c00,#f83600,#fe8c00);
   text-decoration: none;
-  padding: 20px 65px;
   border-radius: 10px;
   background-size: 200%;
   transition: .5s;
@@ -123,15 +255,12 @@ html {
 }
 .btnstm {
   position: absolute;
-  top: 74%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 16px;
   font-family: "Poppins", sans-serif;
   color: white;
   background: linear-gradient(to left, #16222A,#3A6073,#16222A);
   text-decoration: none;
-  padding: 20px 90px;
   border-radius: 10px;
   background-size: 200%;
   transition: .5s;
@@ -141,15 +270,12 @@ html {
 }
 .btnda {
   position: absolute;
-  top: 780px;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 16px;
   font-family: "Poppins", sans-serif;
   color: white;
-  background: linear-gradient(to left, #56ab2f,#a8e063,#56ab2f);
+  background: linear-gradient(to left, #237A57,#093028,#237A57);
   text-decoration: none;
-  padding: 20px 85px;
   border-radius: 100px;
   background-size: 200%;
   transition: .5s;
