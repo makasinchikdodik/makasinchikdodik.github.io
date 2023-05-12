@@ -113,7 +113,7 @@ img { pointer-events: none; }
     padding: 20px 75px;
   }
 }
-@media screen and (max-height:680px) and (max-width: 420px) {
+@media screen and (max-height:800px) and (max-width: 420px) {
   .ava {
     top: 140px;
   }
