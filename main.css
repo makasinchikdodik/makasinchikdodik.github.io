@@ -113,7 +113,7 @@ img { pointer-events: none; }
     padding: 20px 75px;
   }
 }
-@media screen and (max-height:800px) and (max-width: 420px) {
+@media screen and (max-height:680px) and (max-width: 420px) {
   .ava {
     top: 140px;
   }
@@ -154,6 +154,47 @@ img { pointer-events: none; }
     padding: 20px 65px;
   }
 }
+@media screen and (max-height:600px) and (max-width: 420px) {
+  .ava {
+    top: 181px;
+  }
+  .text {
+    top: 230px;
+  }
+  .text2 {
+    top: 258px;
+  }
+  .btnyt {
+    top: 37%;
+    font-size: 10px;
+    padding: 20px 65px;
+  }
+  .btnvk {
+    top: 45%;
+    font-size: 10px;
+    padding: 20px 80px;
+  }
+  .btntg {
+    top: 53%;
+    font-size: 10px;
+    padding: 20px 40px;
+  }
+  .btnsc {
+    top: 61%;
+    font-size: 10px;
+    padding: 20px 55px;
+  }
+  .btnstm {
+    top: 69%;
+    font-size: 10px;
+    padding: 20px 70px;
+  }
+  .btnda {
+    top: 670px;    
+    font-size: 10px;
+    padding: 20px 65px;
+  }
+}
 .square {
   width: 650px;
   height: 850px;
@@ -164,7 +205,7 @@ img { pointer-events: none; }
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-}
+  }
 .ava {
   position: absolute;
   left: 50%;
